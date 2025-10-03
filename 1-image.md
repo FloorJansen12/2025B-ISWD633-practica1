@@ -17,9 +17,17 @@ Descargar la imagen **hello-world**
 # COMPLETAR
 
 **¿Qué es nginx**
+
+Nginx (pronunciado como "Engine-X") es un servidor web de alto rendimiento y un servidor proxy inverso. Se utiliza principalmente para servir contenido estático de manera eficiente, pero también puede manejar tareas más complejas como equilibrar la carga, actuar como un proxy inverso para servidores de aplicaciones y manejar conexiones concurrentes de manera eficaz.
+
 # COMPLETAR 
 
 Descargar la imagen  **nginx** en la versión **alpine**
+
+```
+docker pull nginx:alpine
+```
+
 # COMPLETAR
 
 ### Listar imágenes
@@ -27,6 +35,9 @@ Descargar la imagen  **nginx** en la versión **alpine**
 ```
 docker images
 ```
+
+<img width="721" height="126" alt="image" src="https://github.com/user-attachments/assets/4e92b1bc-62be-41af-866b-4db514845d48" />
+
 
 # COLOCAR UNA CAPTURA DE PANTALLA DEL RESULTADO 
 
@@ -46,6 +57,8 @@ Inspeccionar la imagen hello-world
 # COMPLETAR
 
 **¿Con qué algoritmo se está generando el ID de la imagen**
+
+El algoritmo con el que se está generando es: **sha256**
 # COMPLETAR
 
 ### Filtrar imágenes
@@ -63,6 +76,10 @@ docker rmi <nombre imagen>:<tag>
 ```
 
 Eliminar la imagen hello-world 
+```
+docker rmi hello-world:latest
+```
+
 # COMPLETAR
 
 -f: Es la opción para forzar la eliminación de la imagen incluso si hay contenedores en ejecución que utilizan esa imagen.
@@ -73,4 +90,8 @@ Es una buena práctica detener y eliminar todos los contenedores que dependan de
 
 ```
 docker rmi -f <nombre imagen>:<tag>
+```
+
+```
+docker rmi -f hello-world:latest
 ```
