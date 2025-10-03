@@ -11,7 +11,14 @@ docker run -d --name <nombre contenedor> -p <puerto host>:<puerto contenedor> <n
 
 ```
 Crear un contenedor a partir de la imagen nginx version alpine con el mapeo de puertos del ejemplo gráfico, host 3000 y contenedor 80
+
+```
+docker run -d --name webnginx -p 3000:80 nginx:alpine
+```
+
 # COMPLETAR
+
+<img width="885" height="381" alt="image" src="https://github.com/user-attachments/assets/7d9f1cf0-e9c4-4919-91a2-9a18c4318c62" />
 
 # COLOCAR UNA CAPTURA DE PANTALLA  DEL ACCESO http://localhost:3000
 
@@ -41,6 +48,9 @@ No puedes mapear puertos a un contenedor existente directamente después de su c
 
 ### Crear contenedor de Jenkins puertos contenedor: 8080 (interface web) y 50000 (comunicación entre nodos) imagen: jenkins/jenkins:alpine3.18-jdk11
 # COMPLETAR
+
+<img width="562" height="217" alt="image" src="https://github.com/user-attachments/assets/4191e73f-385a-4071-9429-377269c01901" />
+
 
 # COLOCAR UNA CAPTURA DE PANTALLA  DEL ACCESO http://localhost:8080
 
